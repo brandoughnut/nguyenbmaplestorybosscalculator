@@ -1,0 +1,310 @@
+[
+    {
+        "name": "Zakum",
+        "difficulty": {
+            "easy": 1000000,
+            "normal": 3062500,
+            "hard": null,
+            "chaos": 81000000,
+            "extreme": null
+        },
+        "image": "zakum.png"
+    },
+    {
+        "name": "Magnus",
+        "difficulty": {
+            "easy": 3610000,
+            "normal": 12960000,
+            "hard": 95062500,
+            "chaos": null,
+            "extreme": null
+        },
+        "image": "magnus.png"
+    },
+    {
+        "name": "Hilla",
+        "difficulty": {
+            "easy": null,
+            "normal": 4000000,
+            "hard": 56250000,
+            "chaos": null,
+            "extreme": null
+        },
+        "image": "hilla.png"
+    },
+    {
+        "name": "Papulatus",
+        "difficulty": {
+            "easy": 3422500,
+            "normal": 13322500,
+            "hard": null,
+            "chaos": 132250000,
+            "extreme": null
+        },
+        "image": "papulatus.png"
+    },
+    {
+        "name": "Vonbon",
+        "difficulty": {
+            "easy": null,
+            "normal": 4840000,
+            "hard": null,
+            "chaos": 81000000,
+            "extreme": null
+        },
+        "image": "vonbon.png"
+    },
+    {
+        "name": "Pierre",
+        "difficulty": {
+            "easy": null,
+            "normal": 4840000,
+            "hard": null,
+            "chaos": 81000000,
+            "extreme": null
+        },
+        "image": "pierre.png"
+    },
+    {
+        "name": "Crimson Queen",
+        "difficulty": {
+            "easy": null,
+            "normal": 4840000,
+            "hard": null,
+            "chaos": 81000000,
+            "extreme": null
+        },
+        "image": "crimson_queen.png"
+    },
+    {
+        "name": "Vellum",
+        "difficulty": {
+            "easy": null,
+            "normal": 4840000,
+            "hard": null,
+            "chaos": 105062500,
+            "extreme": null
+        },
+        "image": "vellum.png"
+    },
+    {
+        "name": "Horntail",
+        "difficulty": {
+            "easy": 4410000,
+            "normal": 5062500,
+            "hard": null,
+            "chaos": 6760000,
+            "extreme": null
+        },
+        "image": "horntail.png"
+    },
+    {
+        "name": "Von Leon",
+        "difficulty": {
+            "easy": 5290000,
+            "normal": 7290000,
+            "hard": 12250000,
+            "chaos": null,
+            "extreme": null
+        },
+        "image": "von_leon.png"
+    },
+    {
+        "name": "Arkarium",
+        "difficulty": {
+            "easy": 5760000,
+            "normal": 12602500,
+            "hard": null,
+            "chaos": null,
+            "extreme": null
+        },
+        "image": "arkarium.png"
+    },
+    {
+        "name": "Pink Bean",
+        "difficulty": {
+            "easy": null,
+            "normal": 7022500,
+            "hard": null,
+            "chaos": 64000000,
+            "extreme": null
+        },
+        "image": "pink_bean.png"
+    },
+    {
+        "name": "Cygnus",
+        "difficulty": {
+            "easy": 45562500,
+            "normal": 72250000,
+            "hard": null,
+            "chaos": null,
+            "extreme": null
+        },
+        "image": "cygnus.png"
+    },
+    {
+        "name": "Mori Ranmaru",
+        "difficulty": {
+            "easy": null,
+            "normal": 4202500,
+            "hard": 13322500,
+            "chaos": null,
+            "extreme": null
+        },
+        "image": "mori_ranmaru.png"
+    },
+    {
+        "name": "Princess No",
+        "difficulty": {
+            "easy": null,
+            "normal": 81000000,
+            "hard": null,
+            "chaos": null,
+            "extreme": null
+        },
+        "image": "princess_no.png"
+    },
+    {
+        "name": "Akechi Mitsuhide",
+        "difficulty": {
+            "easy": null,
+            "normal": 144000000,
+            "hard": null,
+            "chaos": null,
+            "extreme": null
+        },
+        "image": "akechi_mitsuhide.png"
+    },
+    {
+        "name": "Lotus",
+        "difficulty": {
+            "easy": null,
+            "normal": 162562500,
+            "hard": 370562500,
+            "chaos": null,
+            "extreme": null
+        },
+        "image": "lotus.png"
+    },
+    {
+        "name": "Damien",
+        "difficulty": {
+            "easy": null,
+            "normal": 169000000,
+            "hard": 351562500,
+            "chaos": null,
+            "extreme": null
+        },
+        "image": "damien.png"
+    },
+    {
+        "name": "Guardian Slime",
+        "difficulty": {
+            "easy": null,
+            "normal": 171610000,
+            "hard": 451562500,
+            "chaos": null,
+            "extreme": null
+        },
+        "image": "guardian_slime.png"
+    },
+    {
+        "name": "Lucid",
+        "difficulty": {
+            "easy": 175562500,
+            "normal": 203062500,
+            "hard": 400000000,
+            "chaos": null,
+            "extreme": null
+        },
+        "image": "lucid.png"
+    },
+    {
+        "name": "Will",
+        "difficulty": {
+            "easy": 191275000,
+            "normal": 232562500,
+            "hard": 441000000,
+            "chaos": null,
+            "extreme": null
+        },
+        "image": "will.png"
+    },
+    {
+        "name": "Gloom",
+        "difficulty": {
+            "easy": null,
+            "normal": 248062500,
+            "hard": 462250000,
+            "chaos": null,
+            "extreme": null
+        },
+        "image": "gloom.png"
+    },
+    {
+        "name": "Darknell",
+        "difficulty": {
+            "easy": null,
+            "normal": 264062500,
+            "hard": 484000000,
+            "chaos": null,
+            "extreme": null
+        },
+        "image": "darknell.png"
+    },
+    {
+        "name": "Verus Hilla",
+        "difficulty": {
+            "easy": null,
+            "normal": 447600000,
+            "hard": 552250000,
+            "chaos": null,
+            "extreme": null
+        },
+        "image": "verus_hilla.png"
+    },
+    {
+        "name": "Chosen Seren",
+        "difficulty": {
+            "easy": null,
+            "normal": 668437500,
+            "hard": 756250000,
+            "chaos": null,
+            "extreme": 3025000000
+        },
+        "image": "chosen_seren.png"
+    },
+    {
+        "name": "Kalos",
+        "difficulty": {
+            "easy": 750000000,
+            "normal": 1000000000,
+            "hard": null,
+            "chaos": 2000000000,
+            "extreme": 4000000000
+        },
+        "image": "kalos.png"
+    },
+    {
+        "name": "Kaling",
+        "difficulty": {
+            "easy": 750000000,
+            "normal": 1150000000,
+            "hard": 2300000000,
+            "chaos": null,
+            "extreme": 4600000000
+        },
+        "image": "kaling.png"
+    },
+    {
+        "name": "Black Mage",
+        "difficulty": {
+            "easy": null,
+            "normal": 2500000000,
+            "hard": null,
+            "chaos": null,
+            "extreme": 10000000000
+        },
+        "image": "black_mage.png"
+    }
+]
