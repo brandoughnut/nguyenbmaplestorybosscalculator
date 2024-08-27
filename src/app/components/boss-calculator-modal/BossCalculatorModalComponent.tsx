@@ -40,7 +40,7 @@ const BossCalculatorModalComponent = (
             {
                 bossData && bossData.map((e: any, idx: number) => {
                     return (
-                        <div>
+                        <div key={idx}>
                             <BossRowComponent
                                 name={e.name}
                                 easy={e.difficulty.easy}
