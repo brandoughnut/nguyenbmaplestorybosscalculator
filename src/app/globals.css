@@ -7,3 +7,31 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.plus-sign {
+    position: relative;
+    width: 4rem; /* Adjust size as needed */
+    height: 4rem; /* Adjust size as needed */
+  }
+  .plus-sign::before,
+  .plus-sign::after {
+    content: '';
+    position: absolute;
+    background-color: #7B14FF; /* Color of the plus sign */
+  }
+  .plus-sign::before {
+    width: 100%;
+    height: 0.4rem; /* Thickness of the horizontal line */
+    border-radius: 10px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  .plus-sign::after {
+    height: 100%;
+    width: 0.4rem; /* Thickness of the vertical line */
+    border-radius: 10px;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+  }

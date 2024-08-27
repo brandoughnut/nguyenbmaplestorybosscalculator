@@ -1,70 +1,70 @@
 'use client';
 
-import Image from 'next/image';
-import BossRowComponent from './components/boss-row/BossRowComponent';
-import { useEffect, useState } from 'react';
-import { getBossData } from '@/utils/data-service';
-import { IBoss } from '@/interfaces/interface';
+import { useState } from "react";
+import BossCalculatorModalComponent from "./components/boss-calculator-modal/BossCalculatorModalComponent";
+import Image from "next/image";
 
 export default function Home() {
 
-  const [bossData, setBossData] = useState<IBoss[]>();
+  const [openModal, setOpenModal] = useState<boolean>(false);
 
-  const [mesos, setMesos] = useState<number>(0);
-
-  useEffect(() => {
-    const getData = async () => {
-      const res = await getBossData();
-      setBossData(res);
-    }
-    getData();
-  }, [])
+  const [totalMesos, setTotalMesos] = useState<number>(0);
 
   return (
-    <main className='background min-h-screen flex items-center justify-center py-3'>
-      <div className='bg-[#333333] rounded-[15px] h-full w-full mx-2 md:mx-12 xl:mx-20 pb-2 pt-5 px-5 sm:px-[20px] xl:px-[50px]'>
-        <div className='grid grid-cols-12 font-bold text-[25px] text-white mb-6'>
-          <h1 className='max-sm:text-center col-span-5 sm:col-span-4 lg:col-span-3'>Bosses</h1>
-          <h1 className='max-sm:text-center col-span-7 sm:col-span-8 lg:col-span-9'>Difficulty</h1>
-        </div>
-        {
-          bossData && bossData.map((e:any, idx:number) => {
-            return(
-              <div>
-                <BossRowComponent
-                  name={e.name}
-                  easy={e.difficulty.easy}
-                  normal={e.difficulty.normal}
-                  hard={e.difficulty.hard}
-                  chaos={e.difficulty.chaos}
-                  extreme={e.difficulty.extreme}
-                  image={e.image}
-                  mesos={mesos}
-                  setMesos={setMesos} />
-              </div>
-            )
-          })
-        }
-        <div className='mt-2 max-sm:grid sm:flex sm:justify-between font-bold text-[25px] text-white mb-6'>
-          <div className='my-auto'>
-            {`${mesos.toLocaleString()} Mesos`}
-          </div>
+    <main className={`background min-h-screen overflow-hidden ${openModal && 'flex items-center justify-center py-3'}`}>
+      {
+        openModal &&
+        <BossCalculatorModalComponent
+          setOpenModal={setOpenModal}
+          totalMesos={totalMesos}
+          setTotalMesos={setTotalMesos} />
+      }
+      {
+        !openModal &&
+        <div className='lg:grid max-lg:px-2 max-lg:pt-2 h-full'>
           <div>
-          <button className='max-sm:mt-3.5 bg-red-400 hover:bg-red-300 px-5 py-1 rounded-[15px] border-[2px] border-red-500 me-2'
-            onClick={() => {
+            <div className='lg:grid lg:grid-cols-3'>
+              <div className='max-lg:hidden lg:col-span-1 ps-14 pt-12 font-bold text-white text-[30px]'>
+                <h1>Maplestory</h1>
+                <h1>Boss Tracker</h1>
+              </div>
+              <div className='flex justify-between lg:mt-12 lg:col-span-2 xl:me-12 rounded-xl bg-white w-auto h-[60px] px-4'>
+                <div className='my-auto text-[20px] font-medium flex'>
+                  <div className="border-2 border-[#7B14FF] me-3"></div>
+                  <p>Total Income</p>
+                </div>
+                <p className='my-auto break-words ms-8 truncate'><strong className='font-bold'>{totalMesos.toLocaleString()}</strong> Mesos</p>
+              </div>
+            </div>
+            <div className='grid lg:grid-cols-3 h-full'>
+              <div className='w-full max-lg:mt-auto lg:col-span-1 max-lg:order-2 items-center flex justify-center'>
+                <div className='max-lg:mt-2 bg-white w-full lg:w-[350px] h-[auto] lg:h-[500px] max-lg:rounded-xl lg:rounded-t-[40px] max-lg: p-4'>
+                  <div className='font-medium text-[20px]'>
+                    <p className='text-center font-extrabold lg:mt-10 leading-none'>Add Boss Entry</p>
+                    <div className='plus-sign mx-auto cursor-pointer my-4 lg:my-10'
+                      onClick={() => {
+                        setOpenModal(true);
+                      }}></div>
+                    <div className='flex justify-center mx-4'>
+                      <button className='mx-auto font-extralight bg-gradient-to-r from-[#7B14FF] to-[#C25EFF] text-white w-full py-2 rounded-xl'
+                        onClick={() => {
+                          setTotalMesos(0);
+                        }}>
+                        Clear
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className='lg:col-span-2 max-lg:order-1'>
+                <div>
 
-            }}>
-            Cancel
-          </button>
-          <button className='max-sm:mt-3.5 bg-green-400 hover:bg-green-300 px-5 py-1 rounded-[15px] border-[2px] border-green-500'
-            onClick={() => {
-
-            }}>
-            Save
-          </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+      }
     </main>
   );
 }
