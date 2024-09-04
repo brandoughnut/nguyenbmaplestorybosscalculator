@@ -182,7 +182,7 @@
             "normal": 162562500,
             "hard": 370562500,
             "chaos": null,
-            "extreme": null
+            "extreme": 10
         },
         "image": "lotus.png"
     },

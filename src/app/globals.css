@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .background {
-    background-image: url(../../public/assets/images/CustomPurpleBG.png);
+    background-image: url(../../public/assets/images/orangebg.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -17,7 +17,7 @@
   .plus-sign::after {
     content: '';
     position: absolute;
-    background-color: #7B14FF; /* Color of the plus sign */
+    background-color: #EE5F30; /* Color of the plus sign */
   }
   .plus-sign::before {
     width: 100%;

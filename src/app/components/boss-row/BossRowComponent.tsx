@@ -12,7 +12,8 @@ const BossRowComponent = (
         extreme,
         image,
         mesos,
-        setMesos
+        setMesos,
+        isList
     }:
         {
             name: string,
@@ -23,11 +24,12 @@ const BossRowComponent = (
             extreme?: number | null,
             image: string,
             mesos: number,
-            setMesos: (input:number) => void
+            setMesos: (input:number) => void,
+            isList: boolean
         }
 ) => {
     return (
-        <div className='grid grid-cols-12 max-sm:border-[#555252] max-sm:border-t-2 py-3'>
+        <div className={`grid ${isList ? 'grid-cols-12' : ''} max-sm:border-[#555252] max-sm:border-t-2 py-3`}>
             <div className='col-span-5 sm:col-span-4 lg:col-span-3 my-auto'>
                 <div className='max-sm:grid sm:flex max-sm:justify-center'>
                     <Image className='h-[45px] w-[45px] sm:me-[20px] rounded-[5px] max-sm:mx-auto'
@@ -40,7 +42,7 @@ const BossRowComponent = (
                     <div className='my-auto truncate font-bold text-white text-[20px] max-sm:mt-3'>{name}</div>
                 </div>
             </div>
-            <div className='max-sm:grid max-sm:justify-center col-span-7 sm:col-span-8 lg:col-span-9 sm:inline-block my-auto'>
+            <div className={`max-sm:grid max-sm:justify-center col-span-7 sm:col-span-8 lg:col-span-9 ${isList ? 'sm:inline-block' : 'grid'} my-auto`}>
                 {
                     easy &&
                     <ButtonComponent

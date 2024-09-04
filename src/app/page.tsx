@@ -30,7 +30,7 @@ export default function Home() {
               </div>
               <div className='flex justify-between lg:mt-12 lg:col-span-2 xl:me-12 rounded-xl bg-white w-auto h-[60px] px-4'>
                 <div className='my-auto text-[20px] font-medium flex'>
-                  <div className="border-2 border-[#7B14FF] me-3"></div>
+                  <div className="border-2 border-[#F1754C] me-3"></div>
                   <p>Total Income</p>
                 </div>
                 <p className='my-auto break-words ms-8 truncate'><strong className='font-bold'>{totalMesos.toLocaleString()}</strong> Mesos</p>
@@ -46,7 +46,7 @@ export default function Home() {
                         setOpenModal(true);
                       }}></div>
                     <div className='flex justify-center mx-4'>
-                      <button className='mx-auto font-extralight bg-gradient-to-r from-[#7B14FF] to-[#C25EFF] text-white w-full py-2 rounded-xl'
+                      <button className='mx-auto font-extralight bg-gradient-to-r from-[#EE5F30] to-[#F1754C] text-white w-full py-2 rounded-xl'
                         onClick={() => {
                           setTotalMesos(0);
                         }}>
